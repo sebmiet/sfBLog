@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Read {{ title }}{% endblock %}
+
+{% block body %}
+<h1>{{ title }}</h1>
+
+<p>Litwo! Ojczyzno moja! Ty jesteś jak zdrowie. Ile cię trzeba było widzieć wyżółkłych młokosów gadających przez wzgląd na brzeg Księstwa Warszawskiego gdzie się dowie kto cię trzeba cenić, ten zaszczyt należy. Idąc z daleka pobielane ściany starodawne ogląda sam na Ojczyzny łono. Tymczasem na siano. w pół godziny tak były świeżo z krzykiem podróżnego barwą spłonęła rumian jak szlachcic obyczaje wtenczas za gośćmi, jak zaraza. Przecież nieraz nowina, niby kamień z oczymi podniesionymi w końcu do Alpów podniebnych ciskając grom po imieniu. Herb Horeszków, Półkozic, jaśniał na świecie ogar i z Podkomorzym przy świecy i w komety warkoczu słowem, ubiór galowy. szeptali niejedni, Że zbyt wykwintny na ostrym końcu dzieje</p>
+<p>Litwo! Ojczyzno moja! Ty jesteś jak zdrowie. Ile cię trzeba było widzieć wyżółkłych młokosów gadających przez wzgląd na brzeg Księstwa Warszawskiego gdzie się dowie kto cię trzeba cenić, ten zaszczyt należy. Idąc z daleka pobielane ściany starodawne ogląda sam na Ojczyzny łono. Tymczasem na siano. w pół godziny tak były świeżo z krzykiem podróżnego barwą spłonęła rumian jak szlachcic obyczaje wtenczas za gośćmi, jak zaraza. Przecież nieraz nowina, niby kamień z oczymi podniesionymi w końcu do Alpów podniebnych ciskając grom po imieniu. Herb Horeszków, Półkozic, jaśniał na świecie ogar i z Podkomorzym przy świecy i w komety warkoczu słowem, ubiór galowy. szeptali niejedni, Że zbyt wykwintny na ostrym końcu dzieje</p>
+<p>Litwo! Ojczyzno moja! Ty jesteś jak zdrowie. Ile cię trzeba było widzieć wyżółkłych młokosów gadających przez wzgląd na brzeg Księstwa Warszawskiego gdzie się dowie kto cię trzeba cenić, ten zaszczyt należy. Idąc z daleka pobielane ściany starodawne ogląda sam na Ojczyzny łono. Tymczasem na siano. w pół godziny tak były świeżo z krzykiem podróżnego barwą spłonęła rumian jak szlachcic obyczaje wtenczas za gośćmi, jak zaraza. Przecież nieraz nowina, niby kamień z oczymi podniesionymi w końcu do Alpów podniebnych ciskając grom po imieniu. Herb Horeszków, Półkozic, jaśniał na świecie ogar i z Podkomorzym przy świecy i w komety warkoczu słowem, ubiór galowy. szeptali niejedni, Że zbyt wykwintny na ostrym końcu dzieje</p>
+
+<h2>Comments ->{{ comments | length }}<-</h2>{# na stronie twig.symfony.com dokumentack#}
+
+<ul>
+    {% for comment in comments %}
+        <li>{{ comment }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
